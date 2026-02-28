@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f0f0f;
+    color: white;
+}
+
+.wide-container {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 40px;
+    color: #00ff88;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;   
+    row-gap: 25px;      
+    margin-bottom: 30px;
+}
+
+.full-width {
+    grid-column: span 3;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    background-color: #1c1c1c !important;
+    color: white !important;
+}
+
+/* Remove white background when clicked */
+input:focus, select:focus {
+    outline: 2px solid #00ff88;
+    background-color: #1c1c1c !important;
+    color: white !important;
+}
+
+/* Fix Chrome autofill white background */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #1c1c1c inset !important;
+    -webkit-text-fill-color: white !important;
+}
+
+button {
+    padding: 14px;
+    border-radius: 6px;
+    border: none;
+    background-color: #00ff88;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00cc66;
+}
+
+.result-wide {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.result-item {
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 25px;
+    background-color: #00ff88;
+    color: black;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.back-btn:hover {
+    background-color: #00cc66;
+}

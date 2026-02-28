@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recommendation Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="wide-container">
+
+    <h1>🌱 Recommended Crop Details</h1>
+
+    <div class="result-wide">
+
+        <div class="result-item">   
+            <h3>Crop</h3>
+            <p>{{ crop }}</p>
+        </div>
+
+        <div class="result-item">
+            <h3>Variety</h3>
+            <p>{{ variety }}</p>
+        </div>
+
+        <div class="result-item">
+            <h3>Duration</h3>
+            <p>{{ duration }}</p>
+        </div>
+
+        <div class="result-item">
+            <h3>Fertilizer</h3>
+            <p>{{ fertilizer }}</p>
+        </div>
+
+        <div class="result-item">
+            <h3>Water Requirement</h3>
+            <p>{{ water_percent }} %</p>
+        </div>
+
+    </div>
+
+    <a href="/" class="back-btn">🔙 Try Again</a>
+
+</div>
+
+</body>
+</html>
