@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Crop Recommendation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="wide-container">
+
+    <h1>🌾 AI Agent for Intelligent Crop Recommendation</h1>
+
+    <form method="POST" action="/predict" class="form-grid">
+
+        <div>
+            <label>Soil Type</label>
+            <input type="text" name="soil" placeholder="Example: Black Soil" required>
+        </div>
+
+        <div>
+            <label>Season</label>
+            <input type="text" name="season" placeholder="Example: Kharif" required>
+        </div>
+
+        <div>
+            <label>pH Value</label>
+            <input type="number"
+                   name="ph"
+                   step="0.1"
+                   min="5.5"
+                   max="7.7"
+                   placeholder="Enter pH value"
+                   oninvalid="this.setCustomValidity('pH value must be between 5.5 and 7.7')"
+                   oninput="this.setCustomValidity('')"
+                   required>
+        </div>
+
+        <div class="full-width">
+            <button type="submit">Get Recommendation</button>
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>
